@@ -1,0 +1,92 @@
+<h1 style="border:black; border-width:3px; border-style:solid; width:30%;">
+    <p>
+      <label>Fahrenheit</label>
+      <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+      oninput="temperatureConverter(this.value)"
+      onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+    </h1>
+      <script>
+        function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    }
+    </script>
+      
+      
+      
+    <h2 style="border:black; border-width:3px; border-style:solid; width:30%;">
+      
+      <form> <p>GCD:</p>
+       <label>First Number</label><br>
+        <input type="number" id="first"><br><br>
+         <label>Second Number</label><br>
+        <input type="number" id="second"><br><br>
+        <button type="button" id="submitGCD">submit</button>
+    </form>
+    <p><span id="resultGCD"></span></p>
+    </h2>
+    
+    
+    
+    <section style="border:black; border-width:3px; border-style:solid; width:30%;">
+      
+    <form> <p>Sum of Digits:</p>
+          <label>NUMBER</label><br>
+        <input type="number" id="num"><br><br>
+        <button type="button" id="submitSOD">submit</button>
+    </form>
+    <p><span id="resultSOD"></span></p>
+      
+    </section>
+    
+    <br>
+    
+    
+    <section style="border:black; border-width:3px; border-style:solid; width:30%;"><br>
+       <label>First Name:</label>
+      <input id="fName" type="text" value="First Name"><br><br>
+       <label>Last Name:</label>
+      <input id="lName" type="text" value="Last Name"><br><br>
+      
+      <label>Title:</label>
+      <select name="titles" id="titles">
+      <option value="none">none</option>
+      <option value="Dr.">Doctor</option>
+      <option value="Mr.">Mister</option>
+      <option value="Mrs.">Misses</option>
+      <option value="Ms.">Miss</option>
+      <option value="Prof.">Professor</option>
+    </select>
+      
+        <label>Suffix:</label>
+      <select name="suffix" id="suffix">
+      <option value="none">none</option>
+      <option value="Sr.">Senior</option>
+      <option value="Jr.">Junior</option>
+    </select><br><br>
+      <button type="button" id="nameButton">Enter Name</button>
+      <p id="full name"></p>
+    </section>
+    
+    
+    
+      <div id="gameContainer">        
+        <h1>Tic Tac Toe</h1>      
+        <div id="cellContainer">           
+          <div cellIndex="0" class="cell"></div>        
+          <div cellIndex="1" class="cell"></div>       
+          <div cellIndex="2" class="cell"></div>        
+          <div cellIndex="3" class="cell"></div>       
+          <div cellIndex="4" class="cell"></div>        
+          <div cellIndex="5" class="cell"></div>         
+          <div cellIndex="6" class="cell"></div>         
+          <div cellIndex="7" class="cell"></div>          
+          <div cellIndex="8" class="cell"></div>      
+        </div>    
+        <h2 id="statusText"></h2>     
+        <button id="restartBtn">Restart</button>    
+    </div>  
+    
+    <script src="assignment03.js" > </script>
