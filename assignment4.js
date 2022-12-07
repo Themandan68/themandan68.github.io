@@ -90,15 +90,12 @@ h. timeFallen(distance) returns time in seconds that an object takes to fall a g
 level on planet Earth)
 */
 
-document
-  .getElementById("loadjson")
-  .addEventListener("click", loadJson);
-document
-  .getElementById("loadpriorcountry")
-  .addEventListener("click", loadPriorCountry);
-document
-  .getElementById("loadnextcountry")
-  .addEventListener("click", loadNextCountry);
+document.getElementById("loadjson")
+  document.addEventListener("click", loadJson);
+document.getElementById("loadpriorcountry")
+  document.addEventListener("click", loadPriorCountry);
+document.getElementById("loadnextcountry")
+  document.addEventListener("click", loadNextCountry);
 
 let country = 0
 let json
