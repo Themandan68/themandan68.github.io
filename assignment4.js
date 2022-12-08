@@ -91,7 +91,7 @@ level on planet Earth)
 */
 
 let load = document.getElementById("loadjson")
-  load.addEventListener("click", loadJson);
+  load.addEventListener("click", loadJson());
 let prior = document.getElementById("loadpriorcountry")
   prior.addEventListener("click", loadPriorCountry);
 let next =document.getElementById("loadnextcountry")
@@ -146,4 +146,3 @@ people
   .filter(obj => obj.age < 18)
   .map(obj => 18 - obj.age)
   .reduce((acc,cv) => acc + cv)
-
