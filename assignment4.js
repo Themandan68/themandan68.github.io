@@ -91,7 +91,7 @@ level on planet Earth)
 */
 
 let load = document.getElementById("loadjson")
-  load.addEventListener("click", loadJson());
+  load.addEventListener("click", loadJson)
 let prior = document.getElementById("loadpriorcountry")
   prior.addEventListener("click", loadPriorCountry);
 let next =document.getElementById("loadnextcountry")
